@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StockIt</title>
+  <meta charset="utf-8">
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/company.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+	background-image: url('/NYC_skyline.png');
+	background-size: cover; 
+}
+</style>
+<body>
+<div class="container">
+<p style="text-align:center;">
+<img src="stockit_logo.png" style="width:50%;height:50%" align='middle'>
+</p>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <div class="col-sm-4">          
+      </div>
+      <div class="col-sm-4">          
+        <input type="name" class="form-control" id="companyName" placeholder="Company Name">
+      </div>
+      <div class="col-sm-4">          
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <input type="button" class="btn btn-default" onclick="getCompany()" value="Submit"></input>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
