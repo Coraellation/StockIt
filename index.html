@@ -3,6 +3,7 @@
 <head>
   <title>StockIt</title>
   <meta charset="utf-8">
+  <script src="jquery-1.12.0.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script type="text/javascript" src="/company.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +26,21 @@ body {
 #main {
   margin-top: 200px;
 }
+
+#dataList {
+  display: none;
+  margin-left:350px;
+  margin-right:350px;
+}
+
+#info {
+  display: none;
+}
+
+.glyphicon {
+    font-size: 30px;
+    float: right;
+}
 </style>
 
 <body>
@@ -34,7 +50,7 @@ body {
   <img src="stockit_logo.png" style="width:50%;height:50%" align='middle'>
   </p>
 
-  <form class="form-horizontal" role="form">
+  <form class="form-horizontal" role="form" id="companyForm">
     <div class="form-group">
       <div class="col-sm-4">          
       </div>
@@ -47,10 +63,25 @@ body {
     <div class="form-group">        
       <div class="wrapper">
         <input type="button" class="btn btn-default" onclick="getCompany()" value="Submit"></input>
-      </div>
+      </div> 
     </div>
   </form>
+
+  <div id="dataList">
+    <ul class="list-group">
+      <li class="list-group-item" data-toggle="tooltip" data-placement="left" title="Tooltip on left"></li>
+      <li class="list-group-item"></li>
+      <li class="list-group-item"></li>
+    </ul>
   </div>
+  <i class="icon-ok-sign" rel="tooltip" title="Key active" id="blah"></i>
+  
+  <div id='info'>
+    <span class="glyphicon glyphicon-question-sign"style="color:blue" aria-hidden="true" onclick ="testToolTip()" data-toggle="tooltip" data-placement="left" title="Average: Ranges from 0 to 1, 0 being a poor financial indication."></span>
+  </div>
+
+
+</div>
 </div>
 </body>
 </html>

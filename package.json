@@ -5,8 +5,11 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
+    "google": "^1.4.0",
+    "newsscraper": "git+https://github.com/xheffy/newsscraper.git",
     "senlp": "git+https://github.com/muntashir/SeNLP.git",
-    "socket.io": "^1.4.5"
+    "socket.io": "^1.4.5",
+    "x-ray": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
