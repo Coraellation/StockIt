@@ -14,6 +14,9 @@ All Bloomberg Business news within a month regarding the inputted company is scr
 - [Socket.io](http://socket.io/)
 
 ### How to Use
+
+![alt tag](http://puu.sh/ngaEp/cc9e88a2b5.png)
+
 URL Coming Soon™ 
 
     npm install
